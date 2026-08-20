@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If this code is used, please cite the article below."
+title: "Enhancement-Disentangled Modelling for T1-CE Meningioma Synthesis: analysis and modelling code"
+abstract: >-
+  Analysis and modelling code for the synthesis of contrast-enhanced
+  T1-weighted MRI of meningioma from non-contrast T1, T2 and FLAIR.
+  Contains the evaluated configurations, the training and evaluation
+  pipelines, the metric definitions and the patient-level statistical
+  analysis. No patient imaging data and no trained weights are included.
+type: software
+license: Apache-2.0
+authors:
+  - family-names: Rofiq
+    given-names: Muhammad
+    affiliation: "Department of Electrical Engineering, Institut Teknologi Sepuluh Nopember, Surabaya, Indonesia"
+    email: 7022232005@student.its.ac.id
+    orcid: "https://orcid.org/ISI-ORCID"
+  - family-names: Purnama
+    given-names: I Ketut Edy
+    affiliation: "Department of Electrical Engineering, Institut Teknologi Sepuluh Nopember, Surabaya, Indonesia"
+    email: ketut@te.its.ac.id
+    orcid: "https://orcid.org/ISI-ORCID"
+  - family-names: Rachmadi
+    given-names: Reza Fuad
+    affiliation: "Department of Electrical Engineering, Institut Teknologi Sepuluh Nopember, Surabaya, Indonesia"
+    email: fuad@its.ac.id
+    orcid: "https://orcid.org/ISI-ORCID"
+  - family-names: Sensusiati
+    given-names: Anggraini Dwi
+    affiliation: "Department of Radiology, Universitas Airlangga, Surabaya, Indonesia"
+    email: anggraini-d-s@fk.unair.ac.id
+    orcid: "https://orcid.org/ISI-ORCID"
+keywords:
+  - MRI synthesis
+  - medical image synthesis
+  - contrast enhancement
+  - meningioma
+  - deep learning
+repository-code: "https://doi.org/10.5281/zenodo.XXXXXXX"

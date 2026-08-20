@@ -1,0 +1,45 @@
+{
+    "experiment_id": "EXP-PGAN01",
+    "experiment_name": "pGAN_baseline",
+    "experiment_root": "experiments",
+    "seed": 42,
+    "dataset_root": "D:\\00_MRI_Meningioma_Synthesis_Project\\03_dataset_release\\dataset_5fold_final_v4",
+    "fold": 1,
+    "modalities": [
+        "T1",
+        "T2",
+        "FLAIR"
+    ],
+    "batch_size": 4,
+    "epochs": 200,
+    "early_stop_patience": 40,
+    "num_workers": 4,
+    "pin_memory": true,
+    "amp": false,
+    "lr": 0.0002,
+    "lr_D": 0.0002,
+    "beta1": 0.5,
+    "weight_decay": 0.0,
+    "optimizer": "Adam",
+    "model": "pGAN",
+    "ngf": 64,
+    "n_blocks": 9,
+    "norm": "instance",
+    "init_type": "normal",
+    "final_activation": "identity",
+    "n_layers_D": 3,
+    "discriminator": {
+        "base_channels": 64,
+        "use_sigmoid": false
+    },
+    "gan": {
+        "use_gan": true,
+        "lambda_adv": 1.0,
+        "warmup_epochs": 0
+    },
+    "loss": {
+        "lambda_A": 100.0,
+        "lambda_vgg": 100.0
+    },
+    "early_stop_metric": "psnr_lpips"
+}

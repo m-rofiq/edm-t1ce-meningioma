@@ -1,0 +1,48 @@
+{
+    "experiment_id": "EXP-806",
+    "experiment_name": "GroupNorm_CosineLR_Iter4",
+    "experiment_root": "experiments",
+    "seed": 42,
+    "dataset_root": "D:\\00_MRI_Meningioma_Synthesis_Project\\03_dataset_release\\dataset_5fold_final_v4",
+    "fold": 0,
+    "batch_size": 4,
+    "epochs": 200,
+    "lr": 0.0001,
+    "weight_decay": 0.0,
+    "optimizer": "Adam",
+    "early_stop_patience": 40,
+    "model": "EDMSynth",
+    "base_channels": 32,
+    "modalities": [
+        "T1",
+        "T2",
+        "FLAIR"
+    ],
+    "discriminator": {
+        "name": "patchgan",
+        "in_channels": 10,
+        "base_channels": 64,
+        "use_spectral_norm": true
+    },
+    "gan": {
+        "use_gan": false,
+        "lambda_gan": 0.0,
+        "gan_loss": "lsgan",
+        "warmup_epochs": 35,
+        "d_updates_per_g": 1,
+        "g_loss_clip": 0.5
+    },
+    "scheduler": {
+        "use_scheduler": true,
+        "type": "cosine",
+        "eta_min": 2e-05
+    },
+    "grad_clip": {
+        "use_clip": true,
+        "max_norm": 1.0
+    },
+    "loss": "EDMLoss",
+    "amp": true,
+    "num_workers": 2,
+    "pin_memory": true
+}

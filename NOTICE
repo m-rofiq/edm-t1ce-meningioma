@@ -1,0 +1,11 @@
+Enhancement-Disentangled Modelling for T1-CE Meningioma Synthesis
+Copyright 2026 Muhammad Rofiq, I Ketut Edy Purnama, Reza Fuad Rachmadi,
+Anggraini Dwi Sensusiati
+
+This product includes software developed at
+Institut Teknologi Sepuluh Nopember, Surabaya, Indonesia.
+
+The directories comparators/pGAN and comparators/ResViT contain third-party
+software released by ICON Lab under the MIT licence, together with components
+under the BSD licence. Those directories are governed by comparators/pGAN/LICENSE
+and comparators/ResViT/LICENSE, and not by the Apache License 2.0 above.

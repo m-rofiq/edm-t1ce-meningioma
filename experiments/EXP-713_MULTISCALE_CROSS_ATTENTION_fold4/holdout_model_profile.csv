@@ -1,0 +1,2 @@
+total_params,trainable_params,flops,gflops,n_warmup,n_runs,avg_inference_time_ms_per_slice,throughput_slices_per_sec,device
+13851235,13851235,151062052864,151.062052864,10,50,44.03024800005369,22.71165949369126,cuda

@@ -1,0 +1,20 @@
+{
+    "experiment_id": "EXP-202",
+    "experiment_name": "ATTENTION_UNET_L1",
+    "experiment_root": "experiments",
+    "seed": 42,
+    "dataset_root": "D:\\00_MRI_Meningioma_Synthesis_Project\\03_dataset_release\\dataset_5fold_final_v4",
+    "fold": 3,
+    "batch_size": 4,
+    "epochs": 200,
+    "lr": 0.0001,
+    "weight_decay": 0.0,
+    "optimizer": "Adam",
+    "early_stop_patience": 25,
+    "model": "AttentionUNet",
+    "base_channels": 32,
+    "loss": "MaskedL1",
+    "amp": true,
+    "num_workers": 4,
+    "pin_memory": true
+}

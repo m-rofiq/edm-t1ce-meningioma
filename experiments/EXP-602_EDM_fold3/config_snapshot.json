@@ -1,0 +1,38 @@
+{
+    "experiment_id": "EXP-602",
+    "experiment_name": "EDM",
+    "experiment_root": "experiments",
+    "seed": 42,
+    "dataset_root": "D:\\00_MRI_Meningioma_Synthesis_Project\\03_dataset_release\\dataset_5fold_final_v4",
+    "fold": 3,
+    "batch_size": 4,
+    "epochs": 200,
+    "lr": 0.0001,
+    "weight_decay": 0.0,
+    "optimizer": "Adam",
+    "early_stop_patience": 25,
+    "model": "EDMSynth",
+    "base_channels": 32,
+    "modalities": [
+        "T1",
+        "T2",
+        "FLAIR"
+    ],
+    "discriminator": {
+        "name": "patchgan",
+        "in_channels": 10,
+        "base_channels": 64,
+        "use_spectral_norm": true
+    },
+    "gan": {
+        "use_gan": true,
+        "lambda_gan": 0.01,
+        "gan_loss": "hinge",
+        "d_updates_per_g": 1,
+        "warmup_epochs": 20
+    },
+    "loss": "EDMLoss",
+    "amp": true,
+    "num_workers": 4,
+    "pin_memory": true
+}

@@ -1,0 +1,24 @@
+name: edm-t1ce
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pytorch=2.10
+  - torchvision
+  - pytorch-cuda=12.8
+  - numpy
+  - pandas
+  - scipy
+  - statsmodels
+  - scikit-image
+  - matplotlib
+  - tqdm
+  - pyyaml
+  - pip
+  - pip:
+      - lpips
+      - pytorch-msssim
+      - pydicom
+      - nibabel

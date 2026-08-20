@@ -1,0 +1,2 @@
+total_params,trainable_params,flops,gflops,n_warmup,n_runs,avg_inference_time_ms_per_slice,throughput_slices_per_sec,device,note
+301362689,301362689,120210718720,120.21071872,10,50,28.160431999713182,35.510818868481316,cuda,"profiled at native ResViT resolution (256x256), not 512x512"

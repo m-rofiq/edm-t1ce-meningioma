@@ -1,0 +1,38 @@
+{
+    "experiment_id": "EXP-803",
+    "experiment_name": "SharpFreq_LSGAN_Iter1",
+    "experiment_root": "experiments",
+    "seed": 42,
+    "dataset_root": "D:\\00_MRI_Meningioma_Synthesis_Project\\03_dataset_release\\dataset_5fold_final_v4",
+    "fold": 0,
+    "batch_size": 4,
+    "epochs": 200,
+    "lr": 0.0001,
+    "weight_decay": 0.0,
+    "optimizer": "Adam",
+    "early_stop_patience": 25,
+    "model": "EDMSynth",
+    "base_channels": 32,
+    "modalities": [
+        "T1",
+        "T2",
+        "FLAIR"
+    ],
+    "discriminator": {
+        "name": "patchgan",
+        "in_channels": 10,
+        "base_channels": 64,
+        "use_spectral_norm": true
+    },
+    "gan": {
+        "use_gan": true,
+        "lambda_gan": 2.5,
+        "gan_loss": "lsgan",
+        "d_updates_per_g": 1,
+        "warmup_epochs": 20
+    },
+    "loss": "EDMLoss",
+    "amp": true,
+    "num_workers": 2,
+    "pin_memory": true
+}

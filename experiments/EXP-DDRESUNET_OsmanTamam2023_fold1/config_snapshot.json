@@ -1,0 +1,25 @@
+{
+    "experiment_id": "EXP-DDRESUNET",
+    "experiment_name": "OsmanTamam2023",
+    "experiment_root": "experiments",
+    "seed": 42,
+    "dataset_root": "D:\\00_MRI_Meningioma_Synthesis_Project\\03_dataset_release\\dataset_5fold_final_v4",
+    "fold": 1,
+    "batch_size": 4,
+    "epochs": 200,
+    "lr": 0.0001,
+    "weight_decay": 0.0,
+    "optimizer": "Adam",
+    "early_stop_patience": 25,
+    "model": "DDResUNet",
+    "base_channels": 16,
+    "modalities": [
+        "T1",
+        "T2",
+        "FLAIR"
+    ],
+    "loss": "DDResUNetLoss",
+    "amp": true,
+    "num_workers": 4,
+    "pin_memory": true
+}
