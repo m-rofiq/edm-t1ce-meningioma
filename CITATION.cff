@@ -14,26 +14,27 @@ authors:
     given-names: Muhammad
     affiliation: "Department of Electrical Engineering, Institut Teknologi Sepuluh Nopember, Surabaya, Indonesia"
     email: 7022232005@student.its.ac.id
-    orcid: "https://orcid.org/ISI-ORCID"
+    orcid: "https://orcid.org/0000-0002-3369-6118"
   - family-names: Purnama
     given-names: I Ketut Edy
     affiliation: "Department of Electrical Engineering, Institut Teknologi Sepuluh Nopember, Surabaya, Indonesia"
     email: ketut@te.its.ac.id
-    orcid: "https://orcid.org/ISI-ORCID"
+    orcid: "https://orcid.org/0000-0002-7438-7880"
   - family-names: Rachmadi
     given-names: Reza Fuad
     affiliation: "Department of Electrical Engineering, Institut Teknologi Sepuluh Nopember, Surabaya, Indonesia"
     email: fuad@its.ac.id
-    orcid: "https://orcid.org/ISI-ORCID"
+    orcid: "https://orcid.org/0000-0001-9101-5598"
   - family-names: Sensusiati
     given-names: Anggraini Dwi
     affiliation: "Department of Radiology, Universitas Airlangga, Surabaya, Indonesia"
     email: anggraini-d-s@fk.unair.ac.id
-    orcid: "https://orcid.org/ISI-ORCID"
+    orcid: "apa yang ini nggih
+    orcid: "https://orcid.org/0000-0002-9841-1769"
 keywords:
   - MRI synthesis
   - medical image synthesis
   - contrast enhancement
   - meningioma
   - deep learning
-repository-code: "https://doi.org/10.5281/zenodo.XXXXXXX"
+repository-code: "https://github.com/m-rofiq/edm-t1ce-meningioma"
