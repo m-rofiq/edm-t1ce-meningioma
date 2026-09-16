@@ -1,5 +1,7 @@
 # Enhancement-Disentangled Modelling for T1-CE Meningioma Synthesis
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22042980.svg)](https://doi.org/10.5281/zenodo.22042980)
+
 Analysis and modelling code for the study *Enhancement-Disentangled Modelling for
 T1-CE Meningioma Synthesis: Enhancement-Region Fidelity and Intensity Calibration
 at the Cost of Global Structural Similarity*.
