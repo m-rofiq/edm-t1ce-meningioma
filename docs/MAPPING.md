@@ -29,3 +29,18 @@ This repository contains the configurations evaluated on the locked hold-out
 cohort. Trained weights and predicted images are not included. Paths inside
 `config_snapshot.json` are the original machine paths and are left unedited
 as a historical record.
+
+
+## Reading a configuration snapshot
+
+Each `config_snapshot.json` is a verbatim record of the working configuration of
+that run. A snapshot may therefore contain keys that the training script of the
+run never reads, left behind by earlier exploration. A key present in a snapshot
+is not evidence that the corresponding mechanism was active.
+
+One case matters for the manuscript. `EXP-602_EDM_fold0/config_snapshot.json`
+carries a `gan` block and a `discriminator` block. The training script of that
+run, `reproduce/EXP602/train.py`, contains no adversarial term and reads neither
+block, which is consistent with the three-term objective stated in the
+manuscript for EDM. The adversarial term belongs to EDM-AP alone, and
+`reproduce/EXP703/train.py` is the script that reads those blocks.
